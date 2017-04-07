@@ -39,6 +39,10 @@
             <td class="columnLabel boldText">Division:</td>
             <td><%= collection_select(:member, :division_id, Division.order(:name), :id, :name, {}, {:multiple => false, :disabled => "disabled"}) %></td>
         </tr>
+        <tr>
+            <td class="columnLabel boldText">Picture:</td>
+            <td><%= image_tag(@member.picture, :class => "show_size") %></td>
+        </tr>
     </table>
     
     <div class="divCenter">

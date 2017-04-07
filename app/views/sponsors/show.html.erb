@@ -22,6 +22,10 @@
             <td class="columnLabel boldText">Link to Sponsor:</td>
             <td><%= @sponsor.link_to_sponsor %></td>
         </tr>
+        <tr>
+            <td class="columnLabel boldText">Logo:</td>
+            <td><%= image_tag(@sponsor.logo, :class => "show_size") %></td>
+        </tr>
     </table>
     <div class="divCenter">
         <%= link_to("Back to list", sponsors_path, :class => "btn btn-warning btn-sm") %>

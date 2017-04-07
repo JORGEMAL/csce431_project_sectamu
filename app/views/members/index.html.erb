@@ -10,6 +10,7 @@
             <th>Grad Year</th>
             <th>Member since</th>
             <th>Hometown</th>
+            <th>Picture</th>
             <th>Position</th>
             <th>Division</th>
             <td></td>
@@ -26,6 +27,7 @@
             <td><%= member.hometown %></td>
             <td><%= member.position_id %></td>
             <td><%= member.division_id %></td>
+            <td style="text-align:center"><%= image_tag(member.picture, :class => "thumb_size") %></td>
             <td>
                 <%= link_to("Show", member_path(member.id), :class => "btn btn-primary btn-xs") %>
                 <%= link_to("Edit", edit_member_path(member.id), :class => "btn btn-primary btn-xs") %>

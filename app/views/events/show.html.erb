@@ -11,6 +11,10 @@
             <td class="columnLabel boldText">Link to Event:</td>
             <td><%= @event.link_to_event %></td>
         </tr>
+        <tr>
+            <td class="columnLabel boldText">Image:</td>
+            <td><%= image_tag(@event.image, :class => "show_size") %></td>
+        </tr>
     </table>
     <div class="divCenter">
         <%= link_to("Back to list", events_path, :class => "btn btn-warning btn-sm") %>

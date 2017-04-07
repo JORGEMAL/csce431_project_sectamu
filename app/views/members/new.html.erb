@@ -44,6 +44,10 @@
                 <td class="columnLabel">Division</td>
                 <td><%= collection_select(:member, :division_id, Division.order(:name), :id, :name, {}, {:multiple => false}) %></td>
             </tr>
+            <tr>
+                <td class="columnLabel">Picture</td>
+                <td><%= f.text_field(:picture, size: 40) %></td>
+            </tr>
         </table>
         
         <div class="divCenter">

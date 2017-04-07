@@ -6,6 +6,7 @@
             <th>Name</th>
             <th>Description</th>
             <th>Type</th>
+            <th>Logo</th>
             <th>Link to SEC</th>
             <th>Link to Sponsor</th>
             <th></th>
@@ -18,6 +19,7 @@
             <td><%= sponsor.spn_type %></td>
             <td><%= sponsor.link_to_sec %></td>
             <td><%= sponsor.link_to_sponsor %></td>
+            <td style="text-align:center"><%= image_tag(sponsor.logo, :class => "thumb_size") %></td>
             <td>
                 <%= link_to("Show", sponsor_path(sponsor.id), :class => "btn btn-primary btn-xs") %>
                 <%= link_to("Edit", edit_sponsor_path(sponsor.id), :class => "btn btn-primary btn-xs") %>

@@ -1,4 +1,3 @@
-
 <div>
     <h2>Create Committee</h2>
     <%= form_for(@committee) do |f| %>
@@ -11,6 +10,10 @@
             <tr>
                 <td class="columnLabel">Description</td>
                 <td><%= f.text_area(:description, cols: 43, rows: 10) %></td>
+            </tr>
+            <tr>
+                <td class="columnLabel">Image</td>
+                <td><%= f.text_field(:image, size: 40) %></td>
             </tr>
         </table>
         

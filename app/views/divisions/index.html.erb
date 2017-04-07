@@ -6,6 +6,7 @@
             <th>#</th>
             <th>Name</th>
             <th>Description</th>
+            <th>Image</th>
             <th></th>
         </tr>
         <% @divisions.each do |division| %>
@@ -13,6 +14,7 @@
             <td><%= division.id %></td>
             <td><%= division.name %></td>
             <td><%= division.description %></td>
+            <td style="text-align:center"><%= image_tag(division.image, :class => "thumb_size") %></td>
             <td>
                 <%= link_to("Show", division_path(division.id), :class => "btn btn-primary btn-xs") %>
                 <%= link_to("Edit", edit_division_path(division.id), :class => "btn btn-primary btn-xs") %>

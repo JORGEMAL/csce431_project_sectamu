@@ -10,6 +10,10 @@
         <tr>
             <td class="columnLabel boldText">Description:</td>
             <td><%= @division.description %></td>
+        </tr
+         <tr>
+            <td class="columnLabel boldText">Image:</td>
+            <td><%= image_tag(@division.image, :class => "show_size") %></td>
         </tr>
     </table>
     

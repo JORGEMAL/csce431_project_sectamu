@@ -5,6 +5,7 @@
             <th>#</th>
             <th>Name</th>
             <th>Link</th>
+            <th>Image</th>
             <th></th>
         </tr>
         <% @events.each do |event| %>
@@ -12,6 +13,7 @@
             <td><%= event.id %></td>
             <td><%= event.name %></td>
             <td><%= event.link_to_event %></td>
+            <td style="text-align:center"><%= image_tag(event.image, :class => "thumb_size") %></td>
             <td>
                 <%= link_to("Show", event_path(event.id), :class => "btn btn-primary btn-xs") %>
                 <%= link_to("Edit", edit_event_path(event.id), :class => "btn btn-primary btn-xs") %>
